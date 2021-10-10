@@ -44,48 +44,40 @@ class MyApp extends StatelessWidget {
             ),
             SizedBox(
               height: 10,
+              width: 150,
+              child: Divider(
+                color: Colors.teal.shade100,
+              ),
             ),
             Card(
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              color: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Icon(Icons.phone, color: Colors.teal.shade900),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      '+91 95 8222 7880',
-                      style: TextStyle(
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.teal.shade900),
-                    ),
-                  ],
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Colors.teal.shade900,
+                ),
+                title: Text(
+                  '+91 - 958 222 7880',
+                  style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.teal.shade900),
                 ),
               ),
             ),
             Card(
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              color: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Icon(Icons.email, color: Colors.teal.shade900),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'sumant4ssm@gmail.com',
-                      style: TextStyle(
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.teal.shade900),
-                    ),
-                  ],
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Colors.teal.shade900,
+                ),
+                title: Text(
+                  'sumant4ssm@gmail.com',
+                  style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.teal.shade900),
                 ),
               ),
             ),
