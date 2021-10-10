@@ -42,44 +42,51 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
+            SizedBox(
+              height: 10,
+            ),
+            Card(
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              padding: EdgeInsets.all(10.0),
               color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(Icons.phone, color: Colors.teal.shade900),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    '+91 95 8222 7880',
-                    style: TextStyle(
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.teal.shade900),
-                  ),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Icon(Icons.phone, color: Colors.teal.shade900),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      '+91 95 8222 7880',
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.teal.shade900),
+                    ),
+                  ],
+                ),
               ),
             ),
-            Container(
+            Card(
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              padding: EdgeInsets.all(10.0),
               color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(Icons.email, color: Colors.teal.shade900),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    'sumant4ssm@gmail.com',
-                    style: TextStyle(
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.teal.shade900),
-                  ),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Icon(Icons.email, color: Colors.teal.shade900),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'sumant4ssm@gmail.com',
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.teal.shade900),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
